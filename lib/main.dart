@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 import 'pages/main_page.dart';
+import 'pages/city_page.dart';
 // °C
 
-void main() async {
+void main(){
   runApp(MyApp());
 }
 
@@ -12,7 +13,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MainPage(),
+      home: CityPage(),
+      routes: {
+        '/weather': (context) => MainPage(),
+        '/city': (context) => CityPage(),
+      },
     );
   }
 }

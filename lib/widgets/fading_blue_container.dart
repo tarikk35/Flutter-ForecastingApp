@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class FadingBlueBGC extends StatelessWidget {
+  final Widget child;
+  FadingBlueBGC({this.child});
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -10,6 +12,7 @@ class FadingBlueBGC extends StatelessWidget {
           colors: [Colors.cyan.shade200, Colors.cyanAccent.shade200],
         ),
       ),
+      child: child,
     );
   }
 }

@@ -6,7 +6,7 @@ class OpaqueAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       primary: true,
-      titleSpacing: DeviceInfo(context: context).width/6,
+      titleSpacing: DeviceInfo(context: context).width / 6,
       elevation: 0,
       backgroundColor: Colors.transparent,
       title: Text(
@@ -23,7 +23,9 @@ class OpaqueAppBar extends StatelessWidget {
             Icons.expand_more,
             color: Colors.black,
           ),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).pushReplacementNamed('/city');
+          },
         ),
         SizedBox(
           width: 40,
