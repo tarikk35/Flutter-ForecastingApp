@@ -6,9 +6,8 @@ class FadingBlueBGC extends StatelessWidget {
     return Container(
       alignment: Alignment.center,
       decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage('images/fadingblue.jpg'),
-          fit: BoxFit.cover,
+        gradient: LinearGradient(
+          colors: [Colors.cyan.shade200, Colors.cyanAccent.shade200],
         ),
       ),
     );
