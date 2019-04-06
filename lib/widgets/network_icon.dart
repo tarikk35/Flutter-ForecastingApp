@@ -9,9 +9,8 @@ class NetworkIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     final DeviceInfo deviceInfo = DeviceInfo(context: context);
     return Container(
-      alignment: Alignment.topLeft,
       margin: EdgeInsets.only(
-          left: deviceInfo.width / 16, top: deviceInfo.height / 20),
+          left: deviceInfo.width / 30, top: deviceInfo.height / 20),
       child: Image.network(
         iconUrl,
         height: deviceInfo.height / 6,
